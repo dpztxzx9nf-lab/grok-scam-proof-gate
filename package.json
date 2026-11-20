@@ -1,0 +1,33 @@
+{
+  "name": "grok-scam-proof-gate",
+  "version": "1.0.0",
+  "description": "Deterministic Proof-Gate and synthetic red-team harness that wraps xAI Grok for senior scam protection. Zero real customer data.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "scam-eval": "./src/eval.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "eval": "node src/eval.js",
+    "pii-sanity": "node scripts/pii-sanity.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpztxzx9nf-lab/grok-scam-proof-gate.git"
+  },
+  "keywords": [
+    "grok",
+    "xai",
+    "scam-detection",
+    "proof-gate",
+    "privacy",
+    "elder-safety"
+  ]
+}

@@ -1,0 +1,1582 @@
+{
+  "mode": "deterministic",
+  "liveNetwork": false,
+  "liveModel": false,
+  "datasetName": "scam-eval-v1",
+  "datasetVersion": "1.0.0",
+  "datasetPath": "/workspace/datasets/scam-eval-v1.json",
+  "metrics": {
+    "total": 101,
+    "exact": 101,
+    "exactAccuracy": 1,
+    "policy": 101,
+    "policyAccuracy": 1,
+    "scamCases": 76,
+    "scamCaught": 76,
+    "scamRecall": 1,
+    "predictedScam": 76,
+    "trueScam": 76,
+    "precision": 1,
+    "falseSafe": 0,
+    "falseSafeRate": 0,
+    "benignCases": 19,
+    "falseAlarms": 0,
+    "falseAlarmRate": 0,
+    "benignCaution": 0,
+    "downgradeToSafe": 0,
+    "blockedDowngrades": 0,
+    "latencyTotalMs": 36.873368000000006,
+    "latencyMeanMs": 0.3650828514851486,
+    "latencyMaxMs": 5.8358069999999955,
+    "categories": [
+      {
+        "category": "ambiguous_caution",
+        "total": 6,
+        "exact": 6,
+        "scam": 0,
+        "scamCaught": 0,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "bank_fraud_impersonation",
+        "total": 4,
+        "exact": 4,
+        "scam": 4,
+        "scamCaught": 4,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "benign_appointment",
+        "total": 4,
+        "exact": 4,
+        "scam": 0,
+        "scamCaught": 0,
+        "falseSafe": 0,
+        "benign": 4,
+        "falseAlarms": 0
+      },
+      {
+        "category": "benign_family",
+        "total": 4,
+        "exact": 4,
+        "scam": 0,
+        "scamCaught": 0,
+        "falseSafe": 0,
+        "benign": 4,
+        "falseAlarms": 0
+      },
+      {
+        "category": "benign_local_tech",
+        "total": 3,
+        "exact": 3,
+        "scam": 0,
+        "scamCaught": 0,
+        "falseSafe": 0,
+        "benign": 3,
+        "falseAlarms": 0
+      },
+      {
+        "category": "benign_official",
+        "total": 8,
+        "exact": 8,
+        "scam": 0,
+        "scamCaught": 0,
+        "falseSafe": 0,
+        "benign": 8,
+        "falseAlarms": 0
+      },
+      {
+        "category": "check_overpayment",
+        "total": 3,
+        "exact": 3,
+        "scam": 3,
+        "scamCaught": 3,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "crypto_atm",
+        "total": 3,
+        "exact": 3,
+        "scam": 3,
+        "scamCaught": 3,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "fake_virus_tech_support",
+        "total": 8,
+        "exact": 8,
+        "scam": 8,
+        "scamCaught": 8,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "gift_card",
+        "total": 4,
+        "exact": 4,
+        "scam": 4,
+        "scamCaught": 4,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "government_impersonation",
+        "total": 4,
+        "exact": 4,
+        "scam": 4,
+        "scamCaught": 4,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "grandparent_emergency",
+        "total": 3,
+        "exact": 3,
+        "scam": 3,
+        "scamCaught": 3,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "isolation_secrecy",
+        "total": 3,
+        "exact": 3,
+        "scam": 3,
+        "scamCaught": 3,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "lookalike_phishing",
+        "total": 9,
+        "exact": 9,
+        "scam": 9,
+        "scamCaught": 9,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "prompt_injection",
+        "total": 8,
+        "exact": 8,
+        "scam": 8,
+        "scamCaught": 8,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "remote_access",
+        "total": 4,
+        "exact": 4,
+        "scam": 4,
+        "scamCaught": 4,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "sms_lure",
+        "total": 10,
+        "exact": 10,
+        "scam": 10,
+        "scamCaught": 10,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "spoofed_email",
+        "total": 9,
+        "exact": 9,
+        "scam": 9,
+        "scamCaught": 9,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      },
+      {
+        "category": "wire_zelle",
+        "total": 4,
+        "exact": 4,
+        "scam": 4,
+        "scamCaught": 4,
+        "falseSafe": 0,
+        "benign": 0,
+        "falseAlarms": 0
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "virus-001",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 5.8358069999999955
+    },
+    {
+      "id": "virus-002",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 2.3496789999999947
+    },
+    {
+      "id": "virus-003",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 0.13480699999999501
+    },
+    {
+      "id": "virus-004",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain",
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 5.162300999999999
+    },
+    {
+      "id": "virus-005",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 0.11163300000000476
+    },
+    {
+      "id": "virus-006",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain",
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 1.891218000000002
+    },
+    {
+      "id": "virus-007",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "virus_scare"
+      ],
+      "latencyMs": 0.20613999999999777
+    },
+    {
+      "id": "virus-008",
+      "category": "fake_virus_tech_support",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain",
+        "unofficial_support_phone",
+        "virus_scare"
+      ],
+      "latencyMs": 0.6190509999999989
+    },
+    {
+      "id": "lookalike-001",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.7302329999999984
+    },
+    {
+      "id": "lookalike-002",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.8921649999999985
+    },
+    {
+      "id": "lookalike-003",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 1.0165450000000007
+    },
+    {
+      "id": "lookalike-004",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.5095340000000022
+    },
+    {
+      "id": "lookalike-005",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.5947300000000055
+    },
+    {
+      "id": "lookalike-006",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "very_young_domain",
+        "brand_domain_mismatch",
+        "lookalike_domain"
+      ],
+      "latencyMs": 1.3483420000000024
+    },
+    {
+      "id": "lookalike-007",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.6227980000000031
+    },
+    {
+      "id": "lookalike-008",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "embedded_credentials"
+      ],
+      "latencyMs": 0.1375460000000004
+    },
+    {
+      "id": "lookalike-009",
+      "category": "lookalike_phishing",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.33092599999999806
+    },
+    {
+      "id": "spoof-chase",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.5998989999999935
+    },
+    {
+      "id": "spoof-wellsfargo",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.4910759999999996
+    },
+    {
+      "id": "spoof-medicare",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.7020569999999964
+    },
+    {
+      "id": "spoof-irs",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.38905099999999493
+    },
+    {
+      "id": "spoof-ssa",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.3138629999999978
+    },
+    {
+      "id": "spoof-amazon",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.32274299999999556
+    },
+    {
+      "id": "spoof-geeksquad",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.3247480000000067
+    },
+    {
+      "id": "spoof-norton",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.49452300000000093
+    },
+    {
+      "id": "spoof-usps",
+      "category": "spoofed_email",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.29486200000000196
+    },
+    {
+      "id": "sms-toll-sunpass",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "toll_sms"
+      ],
+      "latencyMs": 0.665303999999999
+    },
+    {
+      "id": "sms-toll-ezpass",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "toll_sms"
+      ],
+      "latencyMs": 0.5581579999999988
+    },
+    {
+      "id": "sms-frozen-chase",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "frozen_card"
+      ],
+      "latencyMs": 0.1513299999999944
+    },
+    {
+      "id": "sms-grandparent",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "grandparent_emergency",
+        "wire_zelle"
+      ],
+      "latencyMs": 0.2595620000000025
+    },
+    {
+      "id": "sms-pastor-gift",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.1962830000000011
+    },
+    {
+      "id": "sms-boss-gift",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment"
+      ],
+      "latencyMs": 0.10638900000000007
+    },
+    {
+      "id": "sms-usps-fee",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.2976230000000015
+    },
+    {
+      "id": "sms-bofa",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain"
+      ],
+      "latencyMs": 0.46105500000000177
+    },
+    {
+      "id": "sms-xfinity",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "bank_credential_demand"
+      ],
+      "latencyMs": 0.09652200000000022
+    },
+    {
+      "id": "sms-verizon",
+      "category": "sms_lure",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "gift_card_payment"
+      ],
+      "latencyMs": 0.03853700000000515
+    },
+    {
+      "id": "inject-virus",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "virus_scare",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.03835600000000028
+    },
+    {
+      "id": "inject-gift",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.029279000000002497
+    },
+    {
+      "id": "inject-irs",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "government_payment",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.12866100000000102
+    },
+    {
+      "id": "inject-zelle",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "wire_zelle",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.09779499999999786
+    },
+    {
+      "id": "inject-medicare",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "government_payment",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.03603400000000079
+    },
+    {
+      "id": "inject-anydesk",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "remote_access_tool",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.02492400000000572
+    },
+    {
+      "id": "inject-grandparent",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "grandparent_emergency",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.08642700000000048
+    },
+    {
+      "id": "inject-lookalike",
+      "category": "prompt_injection",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "lookalike_domain",
+        "prompt_injection"
+      ],
+      "latencyMs": 0.3634610000000009
+    },
+    {
+      "id": "gift-001",
+      "category": "gift_card",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment"
+      ],
+      "latencyMs": 0.038091999999998905
+    },
+    {
+      "id": "gift-002",
+      "category": "gift_card",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment"
+      ],
+      "latencyMs": 0.02714799999999684
+    },
+    {
+      "id": "gift-003",
+      "category": "gift_card",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "isolation_secrecy",
+        "government_payment"
+      ],
+      "latencyMs": 0.02989300000000128
+    },
+    {
+      "id": "gift-004",
+      "category": "gift_card",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.025660000000002015
+    },
+    {
+      "id": "crypto-001",
+      "category": "crypto_atm",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "crypto_atm"
+      ],
+      "latencyMs": 0.13633800000000207
+    },
+    {
+      "id": "crypto-002",
+      "category": "crypto_atm",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "crypto_atm",
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.08419600000000571
+    },
+    {
+      "id": "crypto-003",
+      "category": "crypto_atm",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "crypto_atm",
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.030799000000001797
+    },
+    {
+      "id": "wire-001",
+      "category": "wire_zelle",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "wire_zelle"
+      ],
+      "latencyMs": 0.027708000000004063
+    },
+    {
+      "id": "wire-002",
+      "category": "wire_zelle",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "government_payment",
+        "wire_zelle"
+      ],
+      "latencyMs": 0.026870000000002392
+    },
+    {
+      "id": "wire-003",
+      "category": "wire_zelle",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "wire_zelle"
+      ],
+      "latencyMs": 0.28772700000000384
+    },
+    {
+      "id": "wire-004",
+      "category": "wire_zelle",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "wire_zelle"
+      ],
+      "latencyMs": 0.02852399999999733
+    },
+    {
+      "id": "remote-001",
+      "category": "remote_access",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "remote_access_tool"
+      ],
+      "latencyMs": 0.025722999999999274
+    },
+    {
+      "id": "remote-002",
+      "category": "remote_access",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "remote_access_tool"
+      ],
+      "latencyMs": 0.024553000000004488
+    },
+    {
+      "id": "remote-003",
+      "category": "remote_access",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "remote_access_tool"
+      ],
+      "latencyMs": 0.023177000000004
+    },
+    {
+      "id": "remote-004",
+      "category": "remote_access",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "remote_access_tool",
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.022877000000001146
+    },
+    {
+      "id": "secrecy-001",
+      "category": "isolation_secrecy",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.02481600000000128
+    },
+    {
+      "id": "secrecy-002",
+      "category": "isolation_secrecy",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.024465999999996768
+    },
+    {
+      "id": "secrecy-003",
+      "category": "isolation_secrecy",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy"
+      ],
+      "latencyMs": 0.023629999999997153
+    },
+    {
+      "id": "gov-001",
+      "category": "government_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "gift_card_payment",
+        "government_payment"
+      ],
+      "latencyMs": 0.028491000000002487
+    },
+    {
+      "id": "gov-002",
+      "category": "government_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "government_payment",
+        "bank_credential_demand"
+      ],
+      "latencyMs": 0.1120599999999996
+    },
+    {
+      "id": "gov-003",
+      "category": "government_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "government_payment"
+      ],
+      "latencyMs": 0.03321199999999891
+    },
+    {
+      "id": "gov-004",
+      "category": "government_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "government_payment",
+        "wire_zelle"
+      ],
+      "latencyMs": 0.026961000000000013
+    },
+    {
+      "id": "bank-001",
+      "category": "bank_fraud_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "bank_credential_demand"
+      ],
+      "latencyMs": 0.032235000000000014
+    },
+    {
+      "id": "bank-002",
+      "category": "bank_fraud_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "wire_zelle",
+        "bank_credential_demand"
+      ],
+      "latencyMs": 0.024380000000000734
+    },
+    {
+      "id": "bank-003",
+      "category": "bank_fraud_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "bank_credential_demand"
+      ],
+      "latencyMs": 0.02426300000000481
+    },
+    {
+      "id": "bank-004",
+      "category": "bank_fraud_impersonation",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "unofficial_support_phone",
+        "bank_credential_demand"
+      ],
+      "latencyMs": 0.030675000000002228
+    },
+    {
+      "id": "grand-001",
+      "category": "grandparent_emergency",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "grandparent_emergency"
+      ],
+      "latencyMs": 0.027264999999999873
+    },
+    {
+      "id": "grand-002",
+      "category": "grandparent_emergency",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "grandparent_emergency"
+      ],
+      "latencyMs": 0.02713200000000171
+    },
+    {
+      "id": "grand-003",
+      "category": "grandparent_emergency",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "isolation_secrecy",
+        "grandparent_emergency",
+        "wire_zelle"
+      ],
+      "latencyMs": 0.025362000000001217
+    },
+    {
+      "id": "check-001",
+      "category": "check_overpayment",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "check_overpayment"
+      ],
+      "latencyMs": 0.5531040000000047
+    },
+    {
+      "id": "check-002",
+      "category": "check_overpayment",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "check_overpayment"
+      ],
+      "latencyMs": 0.3675619999999995
+    },
+    {
+      "id": "check-003",
+      "category": "check_overpayment",
+      "expected": "likely_scam",
+      "predicted": "likely_scam",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "very_young_domain",
+        "check_overpayment"
+      ],
+      "latencyMs": 0.29981199999999575
+    },
+    {
+      "id": "benign-chase",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.18884699999999555
+    },
+    {
+      "id": "benign-wellsfargo",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.0932420000000036
+    },
+    {
+      "id": "benign-medicare",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.07664700000000124
+    },
+    {
+      "id": "benign-irs",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.06927400000000006
+    },
+    {
+      "id": "benign-ssa",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.06862599999999475
+    },
+    {
+      "id": "benign-amazon",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.08077999999999719
+    },
+    {
+      "id": "benign-apple",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.059992000000001156
+    },
+    {
+      "id": "benign-usps",
+      "category": "benign_official",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.05898400000000237
+    },
+    {
+      "id": "family-001",
+      "category": "benign_family",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.20485399999999743
+    },
+    {
+      "id": "family-002",
+      "category": "benign_family",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.5910969999999978
+    },
+    {
+      "id": "family-003",
+      "category": "benign_family",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.2201379999999986
+    },
+    {
+      "id": "family-004",
+      "category": "benign_family",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.18178599999999534
+    },
+    {
+      "id": "appt-001",
+      "category": "benign_appointment",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.03305300000000244
+    },
+    {
+      "id": "appt-002",
+      "category": "benign_appointment",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.03542600000000107
+    },
+    {
+      "id": "appt-003",
+      "category": "benign_appointment",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.24649399999999844
+    },
+    {
+      "id": "appt-004",
+      "category": "benign_appointment",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.24285900000000282
+    },
+    {
+      "id": "tech-001",
+      "category": "benign_local_tech",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.5570820000000012
+    },
+    {
+      "id": "tech-002",
+      "category": "benign_local_tech",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.25626199999999955
+    },
+    {
+      "id": "tech-003",
+      "category": "benign_local_tech",
+      "expected": "safe",
+      "predicted": "safe",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [],
+      "latencyMs": 0.03796599999999728
+    },
+    {
+      "id": "caution-young-photos",
+      "category": "ambiguous_caution",
+      "expected": "caution",
+      "predicted": "caution",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "young_domain"
+      ],
+      "latencyMs": 0.31315999999999633
+    },
+    {
+      "id": "caution-injection-only",
+      "category": "ambiguous_caution",
+      "expected": "caution",
+      "predicted": "caution",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "prompt_injection"
+      ],
+      "latencyMs": 0.027380000000000848
+    },
+    {
+      "id": "caution-recent-domain",
+      "category": "ambiguous_caution",
+      "expected": "caution",
+      "predicted": "caution",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "recent_domain"
+      ],
+      "latencyMs": 0.2851659999999967
+    },
+    {
+      "id": "caution-vague-account",
+      "category": "ambiguous_caution",
+      "expected": "caution",
+      "predicted": "caution",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "vague_urgency"
+      ],
+      "latencyMs": 0.026252999999996973
+    },
+    {
+      "id": "caution-system-tag",
+      "category": "ambiguous_caution",
+      "expected": "caution",
+      "predicted": "caution",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "prompt_injection"
+      ],
+      "latencyMs": 0.026398000000000366
+    },
+    {
+      "id": "caution-library-flyer",
+      "category": "ambiguous_caution",
+      "expected": "caution",
+      "predicted": "caution",
+      "modelVerdict": null,
+      "modelStatus": "skipped",
+      "blockedDowngrade": false,
+      "reasonIds": [
+        "young_domain"
+      ],
+      "latencyMs": 0.3049139999999966
+    }
+  ],
+  "datasetSha256": "152ebf606fca412c944c512d7fef4492f8e88c31ef7c6c9bafc9a69eee69ae4d",
+  "generatedAt": "2026-11-20T04:25:48.259Z",
+  "node": "v22.23.4"
+}

@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Unit tests
+        run: npm test
+      - name: Deterministic eval (0% false-safe)
+        run: npm run eval -- --mode=deterministic --fail-on-false-safe
+      - name: Adversarial LLM eval (0% false-safe)
+        run: npm run eval -- --mode=adversarial-llm --fail-on-false-safe
+      - name: PII and secret sanity
+        run: npm run pii-sanity
