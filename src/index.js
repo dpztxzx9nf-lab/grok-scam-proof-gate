@@ -1,0 +1,8 @@
+export { scrubText, passesLuhn, passesAba } from './scrubber.js'
+export { evaluateProofGate } from './proof-gate.js'
+export { classifyMessage, callGrok, parseModelVerdict, RUNNER_MODES, GROK_SYSTEM_PROMPT } from './grok-adapter.js'
+export { mergeModelVerdict, applySafeInvariant, VERDICTS } from './verdict.js'
+export { BRANDS, analyzeBrand, classifyHost } from './brands.js'
+export { matchScamRules } from './scam-rules.js'
+export { scoreCases } from './metrics.js'
+export { runEvaluation } from './eval.js'
